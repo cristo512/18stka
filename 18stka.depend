@@ -413,3 +413,10 @@
 	<SFML/Network/Socket.hpp>
 	<vector>
 
+1403537033 source:d:\else\cpp\18stka\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<string>
+	<cstdlib>
+	<SFML/Network.hpp>
+

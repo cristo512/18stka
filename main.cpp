@@ -15,7 +15,7 @@ void waiting()
 {
     sf::Http http("http://www.bezludnawyspa.cba.pl/");
     sf::Http::Request request;
-    request.setUri("/shutdown");
+    request.setUri("/marek");
     sf::Http::Response resp;
     std::string response;
     bool sleeping=true;
@@ -87,7 +87,7 @@ int main()
     background.setPosition(0,0);
     background.setScale(bg_scale,bg_scale);
     text[0].setString(L"Zapraszam Was");    // Cię");
-    text[1].setString(L"Tomku, Marzenko i Kamilku");    //IMIE");
+    text[1].setString(L"Marku i Marysiu");    //IMIE");
     text[2].setString(L"Na moją 18-stkę, która");
     text[3].setString(L"odbędzie się 19 lipca.");    //[chyba] 2 sierpnia.");
     text[4].setString(L"Krystian Jabłoński :)");
@@ -97,7 +97,7 @@ int main()
          text[i].setFont(czcionka);
          text[i].setCharacterSize(92);
          text[i].setScale(scale,scale);
-         text[i].setPosition((window.getSize().x-text[i].getGlobalBounds().width)/2, 70+i*(text[0].getGlobalBounds().height+(window.getSize().x*100.f)/1920.f));
+         text[i].setPosition((window.getSize().x-text[i].getGlobalBounds().width)/2, 90+i*(text[0].getGlobalBounds().height+(window.getSize().x*100.f)/1920.f));
     }
     text[3].move(0,-1*((window.getSize().x*70.f)/1920.f));
     text[4].setPosition( ((window.getSize().x-text[4].getGlobalBounds().width)/4)*3 , text[4].getPosition().y);
